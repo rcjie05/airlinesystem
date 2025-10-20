@@ -26,7 +26,7 @@ const flightSchedules = [
     seats: 8,
     tripOptions: {
       oneway: { price: 920, fareType: 'Regular', type: 'oneway' },
-      roundtrip: { price: 1380, fareType: 'Regular', type: 'roundtrip', returnTime: null } // Assume no fixed return for now
+      roundtrip: { price: 1380, fareType: 'Regular', type: 'roundtrip', returnTime: null }
     }
   },
   {
@@ -71,7 +71,7 @@ const flightSchedules = [
     seats: 6,
     tripOptions: {
       oneway: { price: 360, fareType: 'Regular', type: 'oneway' },
-      roundtrip: { price: 540, fareType: 'Regular', type: 'roundtrip', returnTime: null } // Assume no fixed return for now
+      roundtrip: { price: 540, fareType: 'Regular', type: 'roundtrip', returnTime: null }
     }
   },
   {
@@ -86,7 +86,7 @@ const flightSchedules = [
     seats: 10,
     tripOptions: {
       oneway: { price: 400, fareType: 'Regular', type: 'oneway' },
-      roundtrip: { price: 600, fareType: 'Regular', type: 'roundtrip', returnTime: null } // Assume no fixed return for now
+      roundtrip: { price: 600, fareType: 'Regular', type: 'roundtrip', returnTime: null }
     }
   },
   {
@@ -101,7 +101,7 @@ const flightSchedules = [
     seats: 15,
     tripOptions: {
       oneway: { price: 120, fareType: 'Promo', type: 'oneway' },
-      roundtrip: { price: 180, fareType: 'Promo', type: 'roundtrip', returnTime: null } // Assume no fixed return for now
+      roundtrip: { price: 180, fareType: 'Promo', type: 'roundtrip', returnTime: null }
     }
   },
   {
@@ -116,7 +116,7 @@ const flightSchedules = [
     seats: 25,
     tripOptions: {
       oneway: { price: 90, fareType: 'Promo', type: 'oneway' },
-      roundtrip: { price: 135, fareType: 'Promo', type: 'roundtrip', returnTime: null } // Assume no fixed return for now
+      roundtrip: { price: 135, fareType: 'Promo', type: 'roundtrip', returnTime: null }
     }
   }
 ];
