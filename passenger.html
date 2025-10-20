@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AirLines — Passengers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-passengers">
+  <header class="bar">
+    <a href="index.html" class="logo">AirLines</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="book.html">Book a Flight</a>
+      <a href="explore.html">Explore</a>
+      <a href="passenger.html" class="active">Passengers</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Passenger Information</h2>
+      <form id="passengerForm">
+        <div class="form-group">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" placeholder="Enter first name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" placeholder="Enter last name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="passport">Passport Number:</label>
+          <input type="text" id="passport" placeholder="Enter passport number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="nationality">Nationality:</label>
+          <input type="text" id="nationality" placeholder="Enter nationality" required>
+        </div>
+
+        <button type="submit" class="btn">Save Passenger</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Saved Passengers</h2>
+      <div id="passengerList" class="passenger-list">
+        <p class="muted">No passengers added yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AirLines. All rights reserved.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

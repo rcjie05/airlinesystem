@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AirLines — Book</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-booking">
+  <header class="bar">
+    <a href="index.html" class="logo">AirLines</a>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Search Flights</h2>
+      <form id="searchForm" class="form-grid">
+        <div>
+          <label for="from">From</label>
+          <input id="from" name="from" required placeholder="City or Airport">
+        </div>
+        <div>
+          <label for="to">To</label>
+          <input id="to" name="to" required placeholder="City or Airport">
+        </div>
+        <div>
+          <label for="type">Type</label>
+          <select id="type" required>
+            <option value="">-- Select --</option>
+            <option value="oneway">One Way</option>
+            <option value="roundtrip">Round Trip</option>
+          </select>
+        </div>
+        <div>
+          <label for="depart">Depart Date</label>
+          <input id="depart" type="date" required>
+        </div>
+        <div id="returnWrapper" class="hidden">
+          <label for="return">Return Date</label>
+          <input id="return" type="date">
+        </div>
+        <div>
+          <label for="passengers">Passengers</label>
+          <input id="passengers" type="number" min="1" value="1" required>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Search Flights</button>
+          <a href="index.html" class="btn btn-ghost">Cancel</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
